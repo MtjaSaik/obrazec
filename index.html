@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <title>UBanka</title>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <link rel="manifest" href="fav/site.webmanifest">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="register">
+        <h2>Prijava</h2>
+        <div class="info">
+            <input type="image" src="pics/questionmark.png" id="insert">
+            <script>
+                $('#insert').click(function(){
+                  Swal.fire({
+                    icon: 'info',
+                    title: 'CREDITS',
+                    text: "Spletni obrazec je izdelal Mitja Bajc.",
+                  })
+                })
+              </script>
+        </div>
+        <h5>Dobrodošli v UBanko!</h5>
+        <div class="container">
+            <form>
+            <div class="field-holder">
+                <label for="fname">Uporabniško ime ali e-naslov:</label><br>
+                <input type="text" id="fname" required>
+            </div>
+            <div class="field-holder"> 
+                <label for="passw">Geslo:</label><br>
+                <input type="password" id="passw" required>
+            </div>
+            <div>
+                <div class="prijava">
+                    <input type="submit" id="sub" value="PRIJAVA" class="bsubmit">
+                </div>
+            </div>
+            <div class="regi">
+                Nimate računa?<a href="registracija.html">Registrijaj se</a>
+            </div>
+        </form>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-image: linear-gradient(to bottom left, rgb(198, 255, 255), rgb(255, 255, 255));
+    overflow: hidden;
+}
+.main{
+    background-image: linear-gradient(to bottom left, rgba(186, 255, 255, 0.5), rgb(255, 200, 200, 0.5));
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    margin-top: 5%;
+    background-color: rgba(255, 202, 231, 0.1);
+    box-shadow: 1px 1px;
+}
+.container{
+    margin: 50px;
+}
+label{
+    font-family: Arial, Helvetica, sans-serif;
+}
+input{
+    font-size: 16px;
+    width: 200px;
+    height: 35px;
+    border: 1px dotted rgba(128, 128, 128, 0.3);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    outline: none;
+    border-bottom: 1px red solid;
+    background-color: inherit;
+    margin-bottom: 30px;
+}
+input:invalid{
+    border-bottom: red solid 1px;
+}
+input:valid{
+    border-bottom: green solid 1px;
+}
+input:focus{
+    font-size: 17px;
+    transition: 0.5s ease;
+}
+input:not(input:focus){
+    font-size: 16px;
+    transition: 0.5s ease;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.regsub{
+    margin-left: 35%;
+    padding-top: 450px;
+}
+.bsubmit{
+    border: 1px rgba(0, 0, 0, 0.486) solid;
+    border-radius: 5px;
+}
+.regi{
+    margin-left: 35%;
+}
+.regi a{
+    color: rgb(68, 149, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 50px;
+    text-decoration: none;
+}
